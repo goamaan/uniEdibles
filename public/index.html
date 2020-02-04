@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>uniEdibles</title>
+    <link rel="icon" href="favicon1.ico" type="image/ico" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom" id="navbar">
+      <a class="navbar-brand" href="index.html"
+        ><i class="fas fa-cookie-bite fa-2x"></i>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            onclick="search()"
+            id="searchInput"
+          />
+          <button
+            class="btn btn-outline-info my-2 my-sm-0"
+            type="button"
+            id="searchBtn"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="container col-lg-12 text-center" id="content">
+        <h1>uniEdibles</h1>
+        <h2>For your late night munchies</h2>
+      </div>
+    </div>
+    <form class="form-inline container text-center addIngredient">
+      <input
+        class="form-control mr-sm-2"
+        type="text"
+        name="text"
+        placeholder="Add Ingredient"
+        aria-label="Add Ingredient"
+        id="inputText"
+      />
+      <button class="btn btn-custom my-2 my-sm-0" type="reset" id="submit">
+        Add
+      </button>
+    </form>
+    <h3>Ingredient List</h3>
+    <h6>Click on Ingredient to remove it from the list</h6>
+    <form class="form-inline container text-center addIngredient">
+      <button
+        class="btn btn-custom my-2 my-sm-0"
+        type="button"
+        id="submit-final"
+        onclick="refresh()"
+      >
+        Submit
+      </button>
+    </form>
+    <ul id="ul"></ul>
+    <div class="container" id="titleContainer">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h4 id="title1"></h4>
+          <a href="#" id="link1"><img id="myURL1" src="" alt=""/></a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 id="title2"></h4>
+          <a href="#" id="link2"><img id="myURL2" src="" alt=""/></a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 id="title3"></h4>
+          <a href="#" id="link3"><img id="myURL3" src="" alt=""/></a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3fa7205295.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

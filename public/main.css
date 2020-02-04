@@ -1,0 +1,83 @@
+body {
+  font-family: "Titillium Web";
+  background-image: url(lukas-blazek-f-TWhXOrLiU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.651);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 8px rgba(245, 28, 28, 0.233);
+}
+
+#search {
+  margin-top: 40px;
+}
+
+.bg-custom {
+  background-color: rgba(8, 9, 14, 0.856);
+}
+
+#submit {
+  margin-top: 10px;
+}
+
+.addIngredient {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#ptext {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+h6 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#ul {
+  font-size: 24px;
+}
+
+#submit-final {
+  justify-content: center;
+}
+
+#titleContainer {
+  margin-top: 50px;
+}
+
+.fa-cookie-bite {
+  color: rgba(210, 180, 140);
+}
+
+.btn-custom {
+  background-color: rgb(204, 161, 104);
+}
+
+.btn-custom:hover {
+  background-color: rgba(190, 140, 74, 0.966);
+}
